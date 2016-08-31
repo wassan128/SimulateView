@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Simulate View α</title>
+	<link rel="stylesheet" href="./css/style.css"/>
+	<script src="https://maps.googleapis.com/maps/api/js?key=[YOUR_APIKEY_REQUIRED]"></script>
+	<script src="./js/jquery-1.12.4.min.js"></script>
+	<script src="./js/main.js"></script>
+</head>
+<body>
+	<header>
+		<h1>しみゅれ～とびゅ～</h1>
+		<form>
+			<input type="text" id="simuplace" placeholder="ランドマーク、住所など"/>
+			<input type="submit" id="simuload" value="しみゅれ～と"/>
+		</form>
+	</header>
+	<main>
+		<section id="map-area" class="clearfix">
+			<div id="map-canvas"></div>
+			<div id="map-street"></div>
+		</section>
+		<section id="map-latlng">
+			<p>いど・けいど：<span id="map-latlngstr"></span></p>
+		</section>
+	</main>
+</body>
+</html>

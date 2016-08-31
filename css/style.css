@@ -1,0 +1,76 @@
+@charset "utf-8";
+* {
+	font-family: ふい字;
+	margin: 0;
+	padding: 0;
+}
+.clearfix:after {
+	content: "";
+	clear: both;
+	display: block;
+	background: red;
+}
+body {
+	width: 90%;
+}
+header {
+	width: 90%;
+	margin: 0 auto;
+}
+	header * {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	header h1 {
+		color: #666;
+		font-size: 25pt;
+		font-weight: normal;
+	}
+	header h1:first-letter {
+		color: #000;
+		font-size: 35pt;
+		font-weight: bold;
+	}
+	header form {
+		margin-top: 1em;
+		padding: 0 .5em;
+		border-left: 1px solid #DDD;
+	}
+		header input {
+			border: 1px solid #CCC;
+			vertical-align: middle;
+			width: 150px;
+			height: 24px;
+		}
+		header input[type="submit"] {
+			width: 80px;
+		}
+main {
+	width: 90%;
+	margin: 0 auto;
+}
+#map-area {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 90%;
+	height: 500px;
+	margin: auto;
+	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+}
+	#map-canvas {
+		float: left;
+		width: 50%;
+		height: 100%;
+	}
+	#map-street { 
+		width: 50%;
+		height: 100%;
+	}
+#map-latlng {
+	position: absolute;
+	bottom: 30px;
+	font-size: 11pt;
+}
